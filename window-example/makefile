@@ -5,7 +5,7 @@ VPATH      = src
 OBJDIR     = temp
 SOURCES    = window.c
 OBJECTS    = $(addprefix $(OBJDIR)/, $(SOURCES:.c=.o))
-EXECUTABLE = window
+EXECUTABLE = window.out
 
 all: $(EXECUTABLE)
 
