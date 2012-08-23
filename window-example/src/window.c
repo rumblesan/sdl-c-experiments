@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <SDL/SDL.h>
 
-#define WIDTH 640
-#define HEIGHT 480
+#define WIDTH 2560
+#define HEIGHT 1440
 #define BPP 4
 #define DEPTH 32
 
@@ -60,19 +60,19 @@ int main(int argc, char* argv[])
   
     while(!keypress) 
     {
-         DrawScreen(screen,h++);
-         while(SDL_PollEvent(&event)) 
-         {      
-              switch (event.type) 
-              {
-                  case SDL_QUIT:
-	              keypress = 1;
-	              break;
-                  case SDL_KEYDOWN:
-                       keypress = 1;
-                       break;
-              }
-         }
+        DrawScreen(screen,h++);
+        while(SDL_PollEvent(&event)) 
+        {      
+            switch (event.type) 
+            {
+                case SDL_QUIT:
+                    keypress = 1;
+                    break;
+                case SDL_KEYDOWN:
+                    keypress = 1;
+                    break;
+            }
+        }
     }
 
     SDL_Quit();
