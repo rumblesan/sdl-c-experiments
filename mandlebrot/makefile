@@ -6,7 +6,7 @@ OBJDIR     = temp
 SOURCES    = main.c mandelbrot.c
 OBJECTS    = $(addprefix $(OBJDIR)/, $(SOURCES:.c=.o))
 HEADERS    = include/
-EXECUTABLE = mandlebrot.out
+EXECUTABLE = mandelbrot.out
 
 all: $(EXECUTABLE)
 
