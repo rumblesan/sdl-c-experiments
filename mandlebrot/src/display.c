@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <SDL/SDL.h>
 
-#define WIDTH 2560
-#define HEIGHT 1440
+#define WIDTH 1024
+#define HEIGHT 768
 #define BPP 4
 #define DEPTH 32
 
 void setpixel(SDL_Surface *screen, int x, int y, Uint8 r, Uint8 g, Uint8 b)
 {
+    printf("%i, %i, %i\n", r, g, b);
     Uint32 *pixmem32;
     Uint32 colour;  
  
