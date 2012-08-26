@@ -3,7 +3,7 @@ CFLAGS     = -c -Wall
 SDLFLAGS   = `sdl-config --cflags --libs`
 VPATH      = src
 OBJDIR     = temp
-SOURCES    = main.c mandelbrot.c
+SOURCES    = main.c mandelbrot.c lodepng.c
 OBJECTS    = $(addprefix $(OBJDIR)/, $(SOURCES:.c=.o))
 HEADERS    = include/
 EXECUTABLE = mandelbrot.out
